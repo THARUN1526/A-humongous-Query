@@ -1,0 +1,5 @@
+The  code has a time complexity of O(T * N * X), where T is the number of test cases, N is the length of the 10-string S, and X is the desired number of humongous subsequences.
+
+In the code, there is a loop over the number of test cases (T). For each test case, there is a loop over the length of the 10-string (N) to perform some calculations. Within this loop, there is another loop that iterates up to X. Therefore, the overall time complexity is O(T * N * X).
+
+It's important to note that the code does not have an optimized approach and does not take advantage of any specific algorithms or data structures to reduce the time complexity. Depending on the values of T, N, and X, the code's execution time may increase significantly for larger inputs.
