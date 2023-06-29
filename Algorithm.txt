@@ -1,0 +1,29 @@
+
+
+Here's a step-by-step explanation of the code:
+
+1. The code starts with the standard library include `<bits/stdc++.h>` and using the `std` namespace for convenience.
+
+2. The `main()` function is the entry point of the program.
+
+3. The code reads the number of test cases `T` from the input using `cin >> T`.
+
+4. It enters a loop that runs `T` times to process each test case.
+
+5. Inside the loop, it reads a string `s` and an integer `X` from the input using `cin >> s >> X`. The string `s` represents a binary number (0s and 1s), and `X` is an integer.
+
+6. It calculates the size of the string `s` and stores it in the variable `n`.
+
+7. The loop `for (auto &c: s) c ^= '0'` iterates over each character in the string `s` and performs a bitwise XOR operation with the character `'0'`. This converts the characters '0' and '1' to integer values 0 and 1, respectively. The result is stored back in the string `s`.
+
+8. The variable `res` is initialized to `n + 1`. This variable will store the minimum number of flips required.
+
+9. Another loop `for (int i = 1; i <= X; i++)` iterates from 1 to `X`. This loop represents the number of flips allowed.
+
+10. Inside this loop, two variables `A` and `B` are initialized to `i` and `X + 1`, respectively. These variables will keep track of the remaining flips.
+
+11. The variable `cr` is initialized to 0. This variable will count the number of flips performed.
+
+12. The inner loop `for (int j = n - 1; j > 0; j--)` iterates from `n - 1` to 1, representing the positions in the string from right to left.
+
+13. Inside the inner loop, it checks if `B > A`. If true, it subtracts `A` from `B`, increments `cr` by the value of `s[j]` (0 or 1), and continues
